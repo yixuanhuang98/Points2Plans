@@ -1,0 +1,15 @@
+- role: user
+  content: 
+    "Objects: [socks, jacket, drawer, closet, bed]\n
+
+    Object Relationships: [Inside(socks, drawer), 
+    Contact(socks, drawer), 
+    Inside(jacket, closet),
+    Closed(drawer),
+    Closed(cloest)]\n
+
+    Instruction: Fetch me a pair of socks. I'm in the bedroom. \n
+
+    Goals: [[Above(socks, bed), Contact(socks, bed)]]\n
+
+    Plans: [[Open(drawer), Pick(socks, drawer), Place(socks, bed), Close(drawer)]]\n"

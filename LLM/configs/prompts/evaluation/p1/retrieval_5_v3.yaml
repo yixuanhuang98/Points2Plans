@@ -1,0 +1,47 @@
+prompt: BehaviorPromptManager
+prompt_kwargs:
+   # Task prompt
+   task_prompt:
+      # Task
+      task: retrieval_5_v3
+      instruction: "Retrieve object_1 and place it on the sofa."
+      objects: 
+         - "object_1"
+         - "object_2"
+         - "object_3"
+         - "shelf"
+         - "ground"
+         - "sofa"
+      predicates: 
+         - "Inside(object_1, object_2)"
+         - "On(object_2, shelf)"
+         - "Blocking(object_2, object_1)"
+         - "Blocking(object_3, object_2)"
+         - "Blocking(object_3, object_1)"
+         - "On(object_3, shelf)"
+
+      # Behaviors
+      goals: Null
+      plans: Null
+      hypotheses: Null
+      geometric: Null
+
+      # OpenAI
+      role: user
+      name: Null
+      name_query: Null
+      name_response: Null
+      
+   # System prompts
+   system_prompts:
+      - LLM/configs/prompts/system/goal_prediction_v2.yaml
+      - LLM/configs/prompts/system/task_planning_goal_condition_v2.yaml
+
+   # Example prompts
+   example_prompts:
+      - LLM/configs/prompts/examples/example_4.yaml
+      - LLM/configs/prompts/examples/example_5.yaml
+      - LLM/configs/prompts/examples/example_6.yaml
+
+   # Event prompts
+   event_prompts: Null

@@ -1,0 +1,26 @@
+# Task
+task: example_2
+instruction: "Get me object_1 from the drawer. I'm in the bedroom. Don't leave the drawer open."
+objects: 
+  - "object_1"
+  - "object_2"
+  - "drawer"
+  - "closet"
+  - "bed"
+predicates:
+  - "Inside(object_1, drawer)"
+  - "Inside(object_2, closet)"
+  - "Closed(drawer)"
+  - "Closed(closet)"
+
+# Behaviors
+goals: [["On(object_1, bed)", "Closed(drawer)"]]
+plans: [["Open(drawer)", "Pick(object_1, drawer)", "Place(object_1, bed)", "Close(drawer)"]]
+hypotheses: Null
+geometric: Null
+
+# OpenAI
+role: system
+name: Null
+name_query: example_user
+name_response: example_assistant

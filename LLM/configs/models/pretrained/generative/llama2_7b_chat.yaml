@@ -1,0 +1,4 @@
+model: LlamaGenerativeModel
+model_kwargs:
+  model: "meta-llama/Llama-2-7b-chat-hf"
+  do_sample: False

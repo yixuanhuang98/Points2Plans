@@ -1,0 +1,31 @@
+[project]
+name = "fm-planning"
+version = "0.1.0"
+description = "Planning with Foundation Models (FMs): Language Models and Vision-Language Models"
+authors = [
+  { name = "Christopher Agia", email = "cagia@cs.stanford.edu" },
+]
+license = { file = "LICENSE" }
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+dependencies = [
+  "numpy",
+  "torch",
+  "matplotlib",
+  "torchvision",
+  "hydra-core",
+  "openai",
+  "black",
+  "mypy",
+  "pyyaml",
+  "transformers",
+  "pysymbolic",
+]
+
+[tool.setuptools.packages.find]
+include = ["fm_planning*"]

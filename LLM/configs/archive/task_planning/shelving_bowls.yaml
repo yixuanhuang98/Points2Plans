@@ -1,0 +1,20 @@
+# System prompt.
+- configs/prompts/task_planning/system/eRDTransformer.yaml
+
+# In-context prompts.
+- configs/prompts/task_planning/context/ic1.yaml
+- configs/prompts/task_planning/context/ic2.yaml
+- configs/prompts/task_planning/context/ic3.yaml
+
+# Task prompt.
+- role: user
+  content: 
+    "Objects: [small_bowl, large_bowl, medium_bowl, dishwasher, shelf]\n
+
+    Object Relationships: [Inside(small_bowl, dishwasher), 
+    Inside(large_bowl, dishwasher), 
+    Inside(medium_bowl, dishwasher),
+    Front(small_bowl, large_bowl),
+    Front(large_bowl, medium_bowl)]\n
+
+    Instruction: Put all the bowls back on the shelf and sort them by increasing size.\n"

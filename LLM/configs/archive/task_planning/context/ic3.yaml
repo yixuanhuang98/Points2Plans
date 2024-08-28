@@ -1,0 +1,14 @@
+- role: user
+  content: 
+    "Objects: [book_1, book_2, bookshelf, reading_chair, coffee_table]\n
+
+    Object Relationships: [Above(book_1, book_2), Above(book_2, bookshelf), 
+    Contact(book_1, book_2), Contact(book_2, bookshelf)]\n
+
+    Instruction: Bring me book_2.\n
+
+    Goals: [[Above(book_2, reading_chair), Contact(book_2, reading_chair)], 
+    [Above(book_2, coffee_table), Contact(book_2, coffee_table)]]\n
+
+    Plans: [[Pick(book_1, book_2), Place(book_1, bookshelf), Pick(book_2, bookshelf), Place(book_2, reading_chair)],
+    [Pick(book_1, book_2), Place(book_1, bookshelf), Pick(book_2, bookshelf), Place(book_2, coffee_table)]\n"

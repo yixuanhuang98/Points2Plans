@@ -1,0 +1,21 @@
+# Task
+task: example_1
+instruction: "Put object_1 on the sink."
+objects: 
+  - "object_1"
+  - "sink"
+  - "kitchen_table"
+predicates:
+  - "On(object_1, kitchen_table)"
+
+# Behaviors
+goals: [["On(object_1, sink)"]]
+plans: [["Pick(object_1, kitchen_table)", "Place(object_1, sink)"]]
+hypotheses: Null
+geometric: Null
+
+# OpenAI
+role: system
+name: Null
+name_query: example_user
+name_response: example_assistant

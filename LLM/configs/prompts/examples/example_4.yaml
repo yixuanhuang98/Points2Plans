@@ -1,0 +1,29 @@
+# Task
+task: example_4
+instruction: "Please retrieve object_1."
+objects: 
+  - "object_1"
+  - "object_2"
+  - "shelf"
+  - "ground"
+predicates: 
+  - "On(object_1, shelf)"
+  - "On(object_2, shelf)"
+  
+# Behaviors
+goals: [
+  ["On(object_1, ground)"], 
+  ["On(object_2, ground)", "On(object_1, ground)"], 
+]
+plans: [
+  ["Pick(object_1, shelf)", "Place(object_1, ground)"],
+  ["Pick(object_2, shelf)", "Place(object_2, ground)", "Pick(object_1, shelf)", "Place(object_1, ground)"],
+]
+hypotheses: Null
+geometric: Null
+
+# OpenAI
+role: system
+name: Null
+name_query: example_user
+name_response: example_assistant

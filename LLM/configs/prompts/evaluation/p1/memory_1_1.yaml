@@ -1,0 +1,53 @@
+prompt: BehaviorPromptManager
+prompt_kwargs:
+   # Task prompt
+   task_prompt:
+      # Task
+      task: memory_1_1
+      instruction: "Put object_1 in the low drawer, then close the drawer."
+      objects: 
+         # - "object_1"
+         # - "bowl"
+         # - "low_drawer"
+         # - "high_drawer"
+         # - "ground"
+         - "object_1"
+         - "object_2"
+         - "low_drawer"
+         - "high_drawer"
+         - "ground"
+      predicates: 
+         # - "On(object_1, ground)"
+         # - "On(bowl, ground)"
+         # - "Closed(low_drawer)"
+         # - "Closed(high_drawer)"
+         - "On(object_1, ground)"
+         - "On(object_2, ground)"
+         - "Closed(low_drawer)"
+         - "Closed(high_drawer)"
+
+      # Behaviors
+      goals: Null
+      plans: Null
+      hypotheses: Null
+      geometric: Null
+
+      # OpenAI
+      role: user
+      name: Null
+      name_query: Null
+      name_response: Null
+      
+   # System prompts
+   system_prompts:
+      - LLM/configs/prompts/system/goal_prediction_v2.yaml
+      - LLM/configs/prompts/system/task_planning_goal_condition_v2.yaml
+
+   # Example prompts
+   example_prompts:
+      - LLM/configs/prompts/examples/example_1.yaml
+      - LLM/configs/prompts/examples/example_2.yaml
+      - LLM/configs/prompts/examples/example_3.yaml
+
+   # Event prompts
+   event_prompts: Null

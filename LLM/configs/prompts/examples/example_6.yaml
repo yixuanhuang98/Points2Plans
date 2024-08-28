@@ -1,0 +1,26 @@
+# Task
+task: example_6
+instruction: "Please retrieve object_1."
+objects: 
+  - "object_1"
+  - "box"
+  - "ground"
+predicates: 
+  - "Inside(object_1, box)"
+  - "On(box, ground)"
+  
+# Behaviors
+goals: [
+  ["On(object_1, ground)"]
+]
+plans: [
+  ["Pick(object_1, box)", "Place(object_1, ground)"]
+]
+hypotheses: Null
+geometric: Null
+
+# OpenAI
+role: system
+name: Null
+name_query: example_user
+name_response: example_assistant

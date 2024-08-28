@@ -1,0 +1,3 @@
+model: HuggingFaceEmbeddingModel
+model_kwargs:
+  model: "bert-base-uncased"

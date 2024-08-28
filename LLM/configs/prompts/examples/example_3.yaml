@@ -1,0 +1,30 @@
+# Task
+task: example_3
+instruction: "Bring me object_2. I'm sitting on the reading_chair by the coffee_table."
+objects: 
+  - "object_1"
+  - "object_2"
+  - "bookshelf"
+  - "reading_chair"
+  - "coffee_table"
+predicates:
+  - "On(object_1, object_2)"
+  - "On(object_2, bookshelf)"
+  
+# Behaviors
+goals: [
+  ["On(object_2, coffee_table)"], 
+  ["On(object_2, reading_chair)"]
+]
+plans: [
+  ["Pick(object_1, object_2)", "Place(object_1, bookshelf)", "Pick(object_2, bookshelf)", "Place(object_2, coffee_table)"],
+  ["Pick(object_1, object_2)", "Place(object_1, bookshelf)", "Pick(object_2, bookshelf)", "Place(object_2, reading_chair)"]
+]
+hypotheses: Null
+geometric: Null
+
+# OpenAI
+role: system
+name: Null
+name_query: example_user
+name_response: example_assistant

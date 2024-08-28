@@ -1,0 +1,22 @@
+# System prompt.
+- configs/prompts/task_planning/system/eRDTransformer.yaml
+
+# In-context prompts.
+- configs/prompts/task_planning/context/ic1.yaml
+- configs/prompts/task_planning/context/ic2.yaml
+- configs/prompts/task_planning/context/ic3.yaml
+
+# Task prompt.
+- role: user
+  content: 
+    "Objects: [apple, onion, grocery_box, fruit_bowl, garbage_bin, kitchen_cabinet]\n
+
+    Object Relationships: [Inside(apple, grocery_box),
+    Contact(apple, grocery_box),
+    Inside(onion, grocery_box),
+    Contact(onion, grocery_box),
+    Opened(grocery_box),
+    Opened(garbage_bin),
+    Closed(kitchen_cabinet)]\n
+
+    Instruction: Unpack the grocery box into the kitchen cabinet. Start by opening the cabinet.\n"

@@ -1,0 +1,49 @@
+prompt: BehaviorPromptManager
+prompt_kwargs:
+   # Task prompt
+   task_prompt:
+      # Task
+      task: memory_2_2
+      # instruction: "Place object_1 on the bowl. Don't forget to close the drawer."
+      instruction: "Place object_1 on object_3. Don't forget to close the drawer."
+      objects: 
+         - "object_1"
+         - "object_2"
+         - "object_3"
+         - "object_4"
+         - "low_drawer"
+         - "high_drawer"
+         - "ground"
+      predicates: 
+         - "Inside(object_1, low_drawer)"
+         - "Inside(object_2, low_drawer)"
+         - "On(object_3, ground)"
+         - "On(object_4, ground)"
+         - "Closed(low_drawer)"
+         - "Closed(high_drawer)"
+
+      # Behaviors
+      goals: Null
+      plans: Null
+      hypotheses: Null
+      geometric: Null
+
+      # OpenAI
+      role: user
+      name: Null
+      name_query: Null
+      name_response: Null
+      
+   # System prompts
+   system_prompts:
+      - LLM/configs/prompts/system/goal_prediction_v2.yaml
+      - LLM/configs/prompts/system/task_planning_goal_condition_v2.yaml
+
+   # Example prompts
+   example_prompts:
+      - LLM/configs/prompts/examples/example_1.yaml
+      - LLM/configs/prompts/examples/example_2.yaml
+      - LLM/configs/prompts/examples/example_3.yaml
+
+   # Event prompts
+   event_prompts: Null

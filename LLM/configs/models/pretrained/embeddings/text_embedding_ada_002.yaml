@@ -1,0 +1,3 @@
+model: OpenAIEmbeddingModel
+model_kwargs:
+  model: "text-embedding-ada-002"

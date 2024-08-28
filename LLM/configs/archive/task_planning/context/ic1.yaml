@@ -1,0 +1,11 @@
+- role: user
+  content: 
+    "Objects: [cup, sink, kitchen_table]\n
+
+    Object Relationships: [Above(cup, kitchen_table), Contact(cup, kitchen_table)]\n
+
+    Instruction: Place the cup in the sink.\n
+
+    Goals: [[Inside(cup, sink), Contact(cup, sink)]]\n
+
+    Plans: [[Pick(cup, kitchen_table), Place(cup, sink)]]\n"

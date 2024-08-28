@@ -1,0 +1,5 @@
+model: OpenAIGenerativeModel
+model_kwargs:
+  model: "gpt-3.5-turbo"
+  logprobs: True
+  temperature: 0.0
