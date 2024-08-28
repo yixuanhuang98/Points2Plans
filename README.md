@@ -1,5 +1,5 @@
 # Points2Plans: From Point Clouds to Long-Horizon Plans with Composable Relational Dynamics 
-Code to accompany our paper: _Points2Plans: From Point Clouds to Long-Horizon Plans with Composable Relational Dynamics_. [[PDF]](arxiv.org/pdf/2408.14769) [[Website]](https://sites.google.com/stanford.edu/points2plans)
+Code to accompany our paper: _Points2Plans: From Point Clouds to Long-Horizon Plans with Composable Relational Dynamics_. [[PDF]](https://arxiv.org/pdf/2408.14769) [[Website]](https://sites.google.com/stanford.edu/points2plans)
 
 ## Approach Overview
 ![Overview figure](images/teaser.png)
