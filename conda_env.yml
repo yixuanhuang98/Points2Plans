@@ -45,7 +45,6 @@ dependencies:
   - click=8.0.4=py38h06a4308_0
   - cmake=3.16.3=h28c56e5_0
   - coreutils=9.2=h0b41bf4_0
-  - cryptography=38.0.1=py38h9ce1e76_0
   - cuda=11.7.1=0
   - cuda-cccl=11.7.91=0
   - cuda-command-line-tools=11.7.1=0
@@ -439,4 +438,3 @@ dependencies:
       - typing-extensions==4.12.2
       - urdfpy==0.0.22
       - wrapt==1.15.0
-prefix: /home/yixuan/.miniconda3/envs/test_env
